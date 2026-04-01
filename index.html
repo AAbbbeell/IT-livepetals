@@ -1,37 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Minimal Form</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taste of Nigeria - Authentic Nigerian Cuisine</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <i class="fas fa-utensils"></i>
+                <span>Taste of Nigeria</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#dishes">Dishes</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-  <div class="form-container">
-    <h2>Contact Us</h2>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Welcome to Taste of Nigeria</h1>
+            <p>Authentic Nigerian Cuisine Delivered to Your Door</p>
+            <button class="btn btn-primary">Order Now</button>
+        </div>
+    </section>
 
-    <form>
-      <div class="input-group">
-        <label>Name</label>
-        <input type="text" placeholder="Enter your name">
-      </div>
+    <!-- Featured Dishes Section -->
+    <section class="dishes" id="dishes">
+        <div class="container">
+            <h2>Our Signature Dishes</h2>
+            <div class="dishes-grid">
+                <!-- Jollof Rice -->
+                <div class="dish-card">
+                    <div class="dish-image" style="background: linear-gradient(135deg, #f39c12, #e67e22);">
+                        <i class="fas fa-bowl-food"></i>
+                    </div>
+                    <h3>Jollof Rice</h3>
+                    <p>Fragrant tomato-based rice cooked with peppers, onions, and spices. A classic Nigerian favorite.</p>
+                    <div class="dish-price">₦2,500</div>
+                    <button class="btn btn-secondary">Add to Cart</button>
+                </div>
 
-      <div class="input-group">
-        <label>Email</label>
-        <input type="email" placeholder="Enter your email">
-      </div>
+                <!-- Peppered Goat Meat -->
+                <div class="dish-card">
+                    <div class="dish-image" style="background: linear-gradient(135deg, #e74c3c, #c0392b);">
+                        <i class="fas fa-bone"></i>
+                    </div>
+                    <h3>Peppered Goat Meat</h3>
+                    <p>Tender goat meat marinated and cooked in a fiery blend of peppers and traditional spices.</p>
+                    <div class="dish-price">₦4,000</div>
+                    <button class="btn btn-secondary">Add to Cart</button>
+                </div>
 
-      <div class="input-group">
-        <label>Message</label>
-        <textarea rows="4" placeholder="Type your message"></textarea>
-      </div>
+                <!-- Egusi Soup -->
+                <div class="dish-card">
+                    <div class="dish-image" style="background: linear-gradient(135deg, #27ae60, #229954);">
+                        <i class="fas fa-mug-hot"></i>
+                    </div>
+                    <h3>Egusi Soup</h3>
+                    <p>Rich melon seed soup with vegetables, meat, and palm oil. Served with pounded yam or garri.</p>
+                    <div class="dish-price">₦3,500</div>
+                    <button class="btn btn-secondary">Add to Cart</button>
+                </div>
 
-      <button class="btn">Send Message</button>
-    </form>
+                <!-- Amala & Ewedu -->
+                <div class="dish-card">
+                    <div class="dish-image" style="background: linear-gradient(135deg, #8b4513, #654321);">
+                        <i class="fas fa-bowl"></i>
+                    </div>
+                    <h3>Amala & Ewedu</h3>
+                    <p>Smooth yam flour pudding paired with slippery leafy soup and savory meat preparation.</p>
+                    <div class="dish-price">₦3,000</div>
+                    <button class="btn btn-secondary">Add to Cart</button>
+                </div>
 
-    <div class="footer-text">We'll get back to you soon</div>
-  </div>
+                <!-- Suya -->
+                <div class="dish-card">
+                    <div class="dish-image" style="background: linear-gradient(135deg, #c0392b, #e74c3c);">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h3>Suya (Meat Skewers)</h3>
+                    <p>Perfectly charred beef or chicken skewers coated with spicy peanut powder. Street food favorite.</p>
+                    <div class="dish-price">₦2,200</div>
+                    <button class="btn btn-secondary">Add to Cart</button>
+                </div>
 
+                <!-- Moi Moi -->
+                <div class="dish-card">
+                    <div class="dish-image" style="background: linear-gradient(135deg, #d4a574, #b8956a);">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Moi Moi</h3>
+                    <p>Steamed bean pudding infused with eggs, peppers, and spices. Protein-packed and delicious.</p>
+                    <div class="dish-price">₦1,800</div>
+                    <button class="btn btn-secondary">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Taste of Nigeria</h2>
+                    <p>We bring the authentic flavors of Nigeria straight to your table. Our recipes are passed down through generations, using fresh ingredients and traditional cooking methods.</p>
+                    <p>Each dish is prepared with love and attention to detail, ensuring that every bite transports you to the streets and homes of Nigeria.</p>
+                    <ul class="about-list">
+                        <li><i class="fas fa-check"></i> 100% Authentic Recipes</li>
+                        <li><i class="fas fa-check"></i> Fresh Quality Ingredients</li>
+                        <li><i class="fas fa-check"></i> Fast Delivery Service</li>
+                        <li><i class="fas fa-check"></i> Customizable Orders</li>
+                    </ul>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <h3>1000+</h3>
+                        <p>Happy Customers</p>
+                    </div>
+                    <div class="stat">
+                        <h3>50+</h3>
+                        <p>Dishes Available</p>
+                    </div>
+                    <div class="stat">
+                        <h3>100%</h3>
+                        <p>Satisfaction Guaranteed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-form">
+                    <form>
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+2348143871768</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@tasteofondo.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>ondo, Nigeria</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Hours</h4>
+                            <p>Mon-Sun: 10AM - 10PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About Us</h4>
+                    <p>Bringing authentic Nigerian cuisine to the world, one dish at a time.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#dishes">Menu</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Taste of Nigeria. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
